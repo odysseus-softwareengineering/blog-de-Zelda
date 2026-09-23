@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Legend of Zelda: Ocarina of Time</title>
+
+    <style>
+        /* =========================
+           CONFIGURAÇÕES GERAIS
+        ========================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #101810;
+            color: #f1f1f1;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #172417;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 3px solid #c8a951;
+        }
+
+        header h1 {
+            margin: 0 0 20px;
+            color: #d8bd63;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d8bd63;
+        }
+
+        /* =========================
+           CONTEÚDO PRINCIPAL
+        ========================= */
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        article {
+            background-color: #1b281b;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        article h2 {
+            color: #d8bd63;
+        }
+
+        article img {
+            display: block;
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            margin: 20px auto 0;
+            border-radius: 8px;
+        }
+
+        /* =========================
+           FORMULÁRIO
+        ========================= */
+
+        aside {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #f4f1e8;
+            color: #202820;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        aside h2 {
+            margin-top: 0;
+            color: #304b28;
+            text-align: center;
+        }
+
+        aside > p {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        fieldset {
+            border: 1px solid #b8b19b;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #304b28;
+            padding: 0 8px;
+        }
+
+        /* =========================
+           CAMPOS NOME E E-MAIL
+        ========================= */
+
+        .linha-campos {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .campo {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            flex: 1;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #aaa;
+            border-radius: 6px;
+            font-size: 16px;
+            background-color: #ffffff;
+        }
+
+        input:focus,
+        select:focus {
+            outline: none;
+            border-color: #486b38;
+            box-shadow: 0 0 0 2px rgba(72, 107, 56, 0.2);
+        }
+
+        /* =========================
+           CHECKBOX
+        ========================= */
+
+        .checkbox {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 15px;
+        }
+
+        .checkbox input {
+            width: auto;
+        }
+
+        .checkbox label {
+            font-weight: normal;
+        }
+
+        /* =========================
+           BOTÃO
+        ========================= */
+
+        button {
+            background-color: #304b28;
+            color: #ffffff;
+            padding: 14px 25px;
+            border: none;
+            border-radius: 7px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #496d3a;
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        /* =========================
+           RODAPÉ
+        ========================= */
+
+        footer {
+            margin-top: 50px;
+            padding: 25px;
+            background-color: #172417;
+            text-align: center;
+            color: #cccccc;
+            border-top: 2px solid #c8a951;
+        }
+
+        /* =========================
+           RESPONSIVIDADE
+        ========================= */
+
+        @media (max-width: 600px) {
+
+            .linha-campos {
+                flex-direction: column;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            aside {
+                margin: 30px 15px;
+                padding: 20px;
+            }
+
+            main {
+                padding: 0 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>The Legend of Zelda: Ocarina of Time</h1>
+
+        <nav>
+            <a href="#historia">História</a>
+            <a href="#aventura">Aventura</a>
+            <a href="#inscricao">Inscrição</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <article id="historia">
+            <h2>A História de Ocarina of Time</h2>
+
+            <p>
+                The Legend of Zelda: Ocarina of Time acompanha Link em uma
+                aventura pelo reino de Hyrule. O jovem herói precisa enfrentar
+                diversos desafios para proteger a Princesa Zelda e impedir que
+                Ganondorf conquiste o poder da Triforce. Ao longo da jornada,
+                Link também utiliza a misteriosa Ocarina of Time para viajar
+                entre diferentes períodos de sua vida.
+            </p>
+
+            <img
+                src="https://upload.wikimedia.org/wikipedia/en/6/6d/The_Legend_of_Zelda_Ocarina_of_Time.jpg"
+                alt="Capa do jogo The Legend of Zelda: Ocarina of Time"
+            >
+        </article>
+
+        <article id="aventura">
+            <h2>Uma Aventura por Hyrule</h2>
+
+            <p>
+                Durante sua jornada, Link explora diferentes regiões de Hyrule,
+                enfrenta inimigos, resolve enigmas e visita masmorras repletas
+                de desafios. Entre os locais mais marcantes estão a Floresta
+                Kokiri, o Castelo de Hyrule, a Montanha da Morte e o Templo do
+                Tempo. A combinação de exploração, combate e quebra-cabeças
+                tornou Ocarina of Time um dos jogos mais conhecidos da série.
+            </p>
+
+            <img
+                src="https://upload.wikimedia.org/wikipedia/en/6/6d/The_Legend_of_Zelda_Ocarina_of_Time.jpg"
+                alt="Imagem relacionada ao jogo The Legend of Zelda: Ocarina of Time"
+            >
+        </article>
+
+    </main>
+
+    <aside id="inscricao">
+
+        <h2>Inscreva-se no Blog</h2>
+
+        <p>
+            Receba novidades, curiosidades e conteúdos sobre Ocarina of Time.
+        </p>
+
+        <form method="get">
+
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <div class="linha-campos">
+
+                    <div class="campo">
+                        <label for="nome">Nome:</label>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            minlength="3"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <div class="campo">
+                    <label for="idade">Idade:</label>
+
+                    <input
+                        type="number"
+                        id="idade"
+                        name="idade"
+                        min="18"
+                        max="120"
+                        required
+                    >
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferências</legend>
+
+                <div class="campo">
+                    <label for="assunto">
+                        Assunto de interesse:
+                    </label>
+
+                    <select
+                        id="assunto"
+                        name="assunto"
+                        required
+                    >
+                        <option value="">
+                            Selecione um assunto
+                        </option>
+
+                        <option value="historia">
+                            História do jogo
+                        </option>
+
+                        <option value="personagens">
+                            Personagens
+                        </option>
+
+                        <option value="curiosidades">
+                            Curiosidades
+                        </option>
+                    </select>
+                </div>
+
+                <div class="checkbox">
+
+                    <input
+                        type="checkbox"
+                        id="termos"
+                        name="termos"
+                        value="aceito"
+                        required
+                    >
+
+                    <label for="termos">
+                        Aceito os termos
+                    </label>
+
+                </div>
+
+            </fieldset>
+
+            <button type="submit">
+                Inscrever-se
+            </button>
+
+        </form>
+
+    </aside>
+
+    <footer>
+        <p>
+            &copy; 2026 - Blog sobre The Legend of Zelda: Ocarina of Time
+        </p>
+    </footer>
+
+</body>
+</html>

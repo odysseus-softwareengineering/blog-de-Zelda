@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Legend of Zelda: Ocarina of Time</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>The Legend of Zelda: Ocarina of Time</h1>
+
+        <nav>
+            <a href="#historia">História</a>
+            <a href="#aventura">Aventura</a>
+            <a href="#inscricao">Inscrição</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <article id="historia">
+            <h2>A história de Ocarina of Time</h2>
+
+            <p>
+                The Legend of Zelda: Ocarina of Time acompanha Link em uma
+                aventura pelo reino de Hyrule. O jovem herói precisa enfrentar
+                diversos desafios para proteger a Princesa Zelda e impedir que
+                Ganondorf conquiste o poder da Triforce. Ao longo da jornada,
+                Link também utiliza a misteriosa Ocarina of Time para viajar
+                entre diferentes períodos de sua vida.
+            </p>
+
+            <img
+                src="https://upload.wikimedia.org/wikipedia/en/6/6d/The_Legend_of_Zelda_Ocarina_of_Time.jpg"
+                alt="Capa do jogo The Legend of Zelda: Ocarina of Time"
+                width="300"
+            >
+        </article>
+
+        <article id="aventura">
+            <h2>Uma aventura por Hyrule</h2>
+
+            <p>
+                Durante sua jornada, Link explora diferentes regiões de Hyrule,
+                enfrenta inimigos, resolve enigmas e visita masmorras repletas
+                de desafios. Entre os locais mais marcantes estão a Floresta
+                Kokiri, o Castelo de Hyrule, a Montanha da Morte e o Templo do
+                Tempo. A combinação de exploração, combate e quebra-cabeças
+                tornou Ocarina of Time um dos jogos mais conhecidos da série.
+            </p>
+
+            <img
+                src="https://upload.wikimedia.org/wikipedia/en/6/6d/The_Legend_of_Zelda_Ocarina_of_Time.jpg"
+                alt="Imagem relacionada ao jogo The Legend of Zelda: Ocarina of Time"
+                width="300"
+            >
+        </article>
+
+    </main>
+
+    <aside id="inscricao">
+
+        <h2>Inscreva-se no blog</h2>
+
+        <p>
+            Receba novidades, curiosidades e conteúdos sobre Ocarina of Time.
+        </p>
+
+        <form method="get">
+
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <p>
+                    <label for="nome">Nome:</label><br>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        minlength="3"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="email">E-mail:</label><br>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="idade">Idade:</label><br>
+                    <input
+                        type="number"
+                        id="idade"
+                        name="idade"
+                        min="18"
+                        max="120"
+                        required
+                    >
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferências</legend>
+
+                <p>
+                    <label for="assunto">Assunto de interesse:</label><br>
+
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione um assunto</option>
+                        <option value="historia">História do jogo</option>
+                        <option value="personagens">Personagens</option>
+                        <option value="curiosidades">Curiosidades</option>
+                    </select>
+                </p>
+
+                <p>
+                    <input
+                        type="checkbox"
+                        id="termos"
+                        name="termos"
+                        value="aceito"
+                        required
+                    >
+
+                    <label for="termos">
+                        Aceito os termos
+                    </label>
+                </p>
+            </fieldset>
+
+            <button type="submit">Inscrever-se</button>
+
+        </form>
+
+    </aside>
+
+    <footer>
+        <p>
+            &copy; 2026 - Blog sobre The Legend of Zelda: Ocarina of Time
+        </p>
+    </footer>
+
+</body>
+</html>
