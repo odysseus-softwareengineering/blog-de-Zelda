@@ -85,7 +85,7 @@ O formulário também possui um layout responsivo. Em telas maiores, os campos d
 1. Clone este repositório:
 
 ```bash
-git clone https://github.com/SEU-USUARIO/zelda-ocarina-of-time-blog.git
+https://github.com/odysseus-softwareengineering/blog-de-Zelda
 ```
 
 2. Abra a pasta do projeto no Visual Studio Code.
